@@ -7,10 +7,14 @@ Disciplina: Banco de Dados II
 Projeto: Biblioteca
 
 Para iniciar o projeto primeiramente precisamos explicar um pouco mais sobre o funcionamento de uma biblioteca, todas bibliotecas possuem livros e esses são divididos por sessões que podem ser divididas em gênero, editora ,autoria etc, para essa livraria vamos fazer as divisões padrões de uma biblioteca na parte dos livros e vamos também fazer um perfil para cada usuário para ter um controle dos empréstimos de cada exemplar, à biblioteca apenas vai lidar com empréstimo sem vendas de exemplares. Para entendermos de forma melhor vamos dar olhada no modelo lógico(MER):
- <img src="/db.png" width="350" title="hover text">
+ <div align="center">
+<img src="https://user-images.githubusercontent.com/77973497/178185786-e3ce760e-a41c-47e7-849a-a359dcc9fedc.png" width="700px" />
+</div>
 
 É um modelo bem simples, nele pode vemos ver as tabelas que serão desenvolvidas no modelo físico, a tabela “LIVRO” por exemplo está ligada a mais 4 tabelas, a tabela gênero, editora,autoria e exemplar, tudo isso para que seja de mais fácil navegação dentro do Banco de dados. Todo exemplar emprestado ficará vinculado a um usuário que por sua vez tem um perfil com os seus prazos e limites para entrega de livros, como podemos ver é um modelo simples e de prática utilização para qualquer tipo de biblioteca. agora vamos para o modelo físico(MR): 
-<img src="/db1.png" width="350" title="hover text">
+<div align="center">
+<img src="https://user-images.githubusercontent.com/77973497/178186015-cb3e5663-1479-4699-af8a-681c8e36607f.png" width="700px" />
+</div>
 
 Aqui no modelo físico podemos ver o tipo de variável em cada uma das tabelas como por exemplo na tabela livro temos a variável CD com o tipo VARCHAR 45, a variável CD é o código que cada livro vai possuir, cada livro possui um código único para sua identificação, como também o autor,editora,genero entre outros, esse código único serve para facilitar na identificação e procura dos exemplares. Agora vamos falar das principais perguntas relacionadas ao projeto.
 
